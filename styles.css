@@ -1,0 +1,105 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font: 18px "Trebuchet MS", sans-serif;
+  background: #013;
+  color: orange;
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: max-content;
+  background: #012;
+}
+
+menu {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 0;
+}
+
+menu a {
+  color: unset;
+  font-size: 20px;
+}
+
+menu a:not(:hover) {
+  text-decoration: none;
+}
+
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#projects {
+  background-color: #014;
+  padding: 40px;
+}
+
+#project-tiles {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  text-align: center;
+}
+
+.project-tile {
+  padding: 10px;
+  width: 300px;
+  height: 360px;
+  background-color: #015;
+  border: 1px solid wheat;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.project-tile img {
+  width: 278px;
+  height: 278px;
+  object-fit: cover;
+  box-shadow: 0 0 0 1px orange;
+}
+
+.project-tile img.fill {
+  object-fit: fill;
+}
+
+.project-tile h4 {
+  margin: 6px 0 0;
+  font-size: 1.2rem;
+}
+
+.project-tile a {
+  font-size: 1rem;
+  color: wheat;
+}
+
+#contact .social {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+#contact img {
+  width: 120px;
+  height: 120px;
+}
+
+@media (max-width: 1080px) {}
