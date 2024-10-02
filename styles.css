@@ -58,6 +58,7 @@ menu a:not(:hover) {
   flex-wrap: wrap;
   gap: 20px;
   text-align: center;
+  justify-content: center;
 }
 
 .project-tile {
