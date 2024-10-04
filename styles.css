@@ -16,6 +16,7 @@ body {
   width: 100%;
   height: max-content;
   background: #012;
+  z-index: 1;
 }
 
 menu {
@@ -76,6 +77,16 @@ menu a:not(:hover) {
   height: 278px;
   object-fit: cover;
   box-shadow: 0 0 0 1px orange;
+
+  &:nth-child(2) {
+    position: absolute;
+    translate: -100%;
+    transition: 500ms;
+
+    &:not(:hover) {
+      opacity: 0;
+    }
+  }
 }
 
 .project-tile img.fill {
