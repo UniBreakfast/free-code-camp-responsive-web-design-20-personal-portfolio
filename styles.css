@@ -7,6 +7,8 @@ body {
   font: 18px "Trebuchet MS", sans-serif;
   background: #013;
   color: orange;
+  position: relative;
+  z-index: -3;
 }
 
 #navbar {
@@ -14,9 +16,22 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: max-content;
+  height: 60px;
   background: #012;
   z-index: 1;
+
+  @media (max-height: 350px) {
+    transition: 1s;
+
+    &:not(:hover) {
+      opacity: 10%;
+    }
+  }
+}
+
+main {
+  position: relative;
+  z-index: -2;
 }
 
 menu {
@@ -44,11 +59,15 @@ menu a:not(:hover) {
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: #013;
 }
 
 #projects {
   background-color: #014;
-  padding: 40px;
+  margin-top: -60px;
+  padding: 100px 40px 40px;
+  position: relative;
+  z-index: -1;
 }
 
 #project-tiles {
