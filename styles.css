@@ -120,6 +120,7 @@ menu a:not(:hover) {
 .project-tile h4 {
   margin: 6px 0 0;
   font-size: 1.2rem;
+  white-space: nowrap;
 }
 
 .project-tile a {
