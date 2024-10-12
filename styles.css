@@ -106,7 +106,7 @@ menu a:not(:hover) {
     top: 10px;
     pointer-events: none;
     transform-origin: top right;
-    scale: 0;
+    scale: 0.5;
     box-shadow: 2px 3px 20px #222;
 
     :hover+&, &:hover {
