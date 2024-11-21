@@ -69,7 +69,7 @@ menu a:not(:hover) {
       transform: scale(1.005, 1.01);
       filter: blur(5px);
       opacity: 0.5;
-      animation-delay: 300ms;
+      animation-delay: -31700ms;
     }
 
     &:last-child {
